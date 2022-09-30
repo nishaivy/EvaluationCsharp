@@ -32,11 +32,12 @@ class Phonebook {
                 Console.Write(" num: " + num);
                
             }
-            else
+             else
             {
                 Console.WriteLine("\n#################################\n"); 
                 Console.WriteLine("\nCitizens:\n");
                 Console.Write(" Myself: " + name);
+                //Console.Write("Prof: " + Prof);
                 Console.Write(" age: " + age);
                 Console.Write(" num: " + num);
       
@@ -75,8 +76,11 @@ class Phonebook {
             // creating object of derived class
            
             Profession g = new Profession("Kirti", "doctor",20,1234567890);
+            g.readers("riya", "", 25, 1234567890);
+          
+            g.readers("Rekha", "", 45, 1234567890);
             g.readers("nisha", "",17, 1234567890);
-            g.readers("Rekha", "doctor", 45, 1234567890);
+           
             g.readers("Hema", "", 17, 1234567890);
             g.readers("Gaurav", "", 12, 1234567890);
             g.readers("Bhavna", "", 25, 1234567890);
